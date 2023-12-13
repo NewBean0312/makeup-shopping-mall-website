@@ -9,8 +9,7 @@ export default function Home() {
   const [list, setList] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  const API_URL =
-    "http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline";
+  const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
   function getData() {
     // 상품을 받아옴
@@ -33,6 +32,7 @@ export default function Home() {
       </Head>
       {isLoading && (
         <div style={{ padding: "300px 0" }}>
+          {/* 로딩화면 추가 */}
           <Loader inline="centered" active>
             Loading
           </Loader>
