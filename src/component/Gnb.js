@@ -9,6 +9,8 @@ export default function Gnb() {
     activeItem = "home";
   } else if (router.pathname === "/about") {
     activeItem = "about";
+  } else if (router.pathname === "/admin") {
+    activeItem = "admin";
   }
 
   // 버튼 클릭 시, 원하는 링크로 이동하기
@@ -17,7 +19,7 @@ export default function Gnb() {
       router.push("/");
     } else if (data.name === "about") {
       router.push("/about");
-    }
+    } 
   }
 
   return (
@@ -33,6 +35,13 @@ export default function Gnb() {
         active={activeItem === "contact"}
         onClick={() => {
           router.push("/contact");
+        }}
+      />
+      <Menu.Item
+        name="admin"
+        active={activeItem === "admin"}
+        onClick={() => {
+          router.push("/admin");
         }}
       />
     </Menu>
