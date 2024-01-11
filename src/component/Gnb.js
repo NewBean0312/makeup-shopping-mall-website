@@ -9,6 +9,8 @@ export default function Gnb() {
     activeItem = "home";
   } else if (router.pathname === "/about") {
     activeItem = "about";
+  } else if (router.pathname === "/contact") {
+    activeItem = "contact";
   } else if (router.pathname === "/admin") {
     activeItem = "admin";
   }
@@ -19,7 +21,9 @@ export default function Gnb() {
       router.push("/");
     } else if (data.name === "about") {
       router.push("/about");
-    } 
+    } else if (data.name === "contact") {
+      router.push("/contact");
+    }
   }
 
   return (

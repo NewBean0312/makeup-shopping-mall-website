@@ -12,7 +12,7 @@ export default function Top() {
             style={{ display: "block", width: 80 }}
           />
         </div>
-        <Header as="h1">NewBean</Header>
+        <Header as="h1">NewBean Makeup</Header>
       </div>
       <Gnb />
     </div>

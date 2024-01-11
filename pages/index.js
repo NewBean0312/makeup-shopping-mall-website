@@ -1,16 +1,14 @@
 import Axios from "axios";
 import Head from "next/head";
-import { useEffect, useState } from "react";
 import ItemList from "@/src/component/ItemList";
-import styles from "@/styles/Home.module.css";
-import { Divider, Header, Loader } from "semantic-ui-react";
+import { Divider, Header } from "semantic-ui-react";
 
 export default function Home({ list }) {
   return (
     <div>
       <Head>
-        <title>NewBean</title>
-        <meta name="description" content="NewBean 홈입니다."></meta>
+        <title>NewBean Makeup</title>
+        <meta name="description" content="NewBean Makeup 홈입니다."></meta>
       </Head>
       <>
         <Header as="h3" style={{ paddingTop: 40 }}>

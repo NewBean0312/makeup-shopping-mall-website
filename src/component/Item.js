@@ -7,10 +7,8 @@ export default function Item({ item }) {
     image_link,
     price,
     description,
-    updated_at,
     category,
     product_type,
-    product_link,
   } = item;
   
   return (

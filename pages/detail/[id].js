@@ -26,7 +26,7 @@ const Post = ({ item, name }) => {
             <title>{item.name}</title>
             <meta name="description" content={item.description}></meta>
           </Head>
-          {name} 환경 입니다.
+          {name === "DEVELOPMENT" && (name)}
           <Item item={item} />
         </>
       )}
